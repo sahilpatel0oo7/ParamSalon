@@ -1,0 +1,178 @@
+
+
+:root {
+    --bg1: #393f08;
+    --bg2: #8ae825;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.8;
+    background-color: var(--bg1);
+    color:var(--body);
+
+}
+
+
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+a{
+    color: var(--body);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--brand);
+}
+.link-more{
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    left: 1px;
+}
+
+.link-more .icon {
+    transition: all 0.4s ease;
+}
+
+.link-more:hover .icon{
+    transform: translateX(10px);
+}
+
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+/* NAVBAR */
+.navbar{
+background: linear-gradient(to bottom, #393834, rgba(68, 69, 11, 0.2));
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 39px;
+}
+
+
+
+/* HERO */
+
+#hero{
+    background: linear-gradient(to right, #36322d, rgba(27,31,52,0.0)),url(../img/cover_1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position:right;
+}
+
+/* BTN */
+.btn{
+    padding: 10px 36px;
+    font-family:'Times New Roman', Times, serif;
+    transition: all 0.4s ease;
+    border-radius: 0%;
+
+}
+.btn-brand{
+    background-color: var(--brand);
+}
+
+.btn-brand:hover{
+    color: var(--brand);
+    background-color: transparent;
+    border-color: var(--brand);
+}
+.btn-outline-brand{
+    color: var(--brand);
+    background-color: transparent;
+    border-color: var(--brand);
+}
+.btn-outline-brand:hover{
+    background-color: var(--brand);
+}
+
+
+/* ABOUT */
+#about{
+position: relative;
+}
+
+#about::after{
+    content: "";
+    width: 25%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#about h6{
+color: var(--brand);
+
+}
+
+#about h1{
+margin-top: 16px;
+margin-bottom: 24px;
+}
+
+.signature{
+    width: unset;
+}
+
+/* INTRO */
+.intro{
+    margin-bottom: 60px;
+}
+
+.intro h1{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro h6{
+    color: var(--brand);
+}
+
+.intro p{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* SERVICES */
+
+#services{
+    background: #021522;
+}
+
+#services .content{
+    padding: 32px;
+}
+
+#services p{
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
